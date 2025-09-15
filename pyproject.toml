@@ -1,0 +1,18 @@
+[project]
+name = "cv-opencv-university"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6.30.1",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.6",
+    "mediapipe>=0.10.14",
+    "mime>=0.1.0",
+    "moviepy>=2.2.1",
+    "opencv-contrib-python>=4.12.0.88",
+    "pyautogui>=0.9.54",
+    "pydantic>=2.11.9",
+    "streamlit>=1.49.1",
+]
