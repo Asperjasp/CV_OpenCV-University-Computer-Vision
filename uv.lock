@@ -456,6 +456,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "ipykernel" },
     { name = "jupyter" },
+    { name = "jupyterlab-git" },
     { name = "matplotlib" },
     { name = "mediapipe" },
     { name = "mime" },
@@ -470,6 +471,7 @@ dependencies = [
 requires-dist = [
     { name = "ipykernel", specifier = ">=6.30.1" },
     { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "jupyterlab-git", specifier = ">=0.51.2" },
     { name = "matplotlib", specifier = ">=3.10.6" },
     { name = "mediapipe", specifier = ">=0.10.14" },
     { name = "mime", specifier = ">=0.1.0" },
@@ -1065,6 +1067,18 @@ wheels = [
 ]
 
 [[package]]
+name = "jupyter-server-mathjax"
+version = "0.2.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyter-server" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9c/40/9a1b8c2a2e44e8e2392174cd8e52e0c976335f004301f61b66addea3243e/jupyter_server_mathjax-0.2.6.tar.gz", hash = "sha256:bb1e6b6dc0686c1fe386a22b5886163db548893a99c2810c36399e9c4ca23943", size = 2648665, upload-time = "2022-07-14T16:19:32.161Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7d/77/6a98cc88f1061c0206b427b602efb6fcb9bc369e958aee11676d5cfc4412/jupyter_server_mathjax-0.2.6-py3-none-any.whl", hash = "sha256:416389dde2010df46d5fbbb7adb087a5607111070af65a1445391040f2babb5e", size = 3120990, upload-time = "2022-07-14T16:19:29.517Z" },
+]
+
+[[package]]
 name = "jupyter-server-terminals"
 version = "0.5.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1099,6 +1113,23 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d0/07/b3beaeb5722d4a55e345a38884c67baebd9cec2269c5309ce494485a5858/jupyterlab-4.4.7.tar.gz", hash = "sha256:8c8e225492f4513ebde9bbbc00a05b651ab9a1f5b0013015d96fabf671c37188", size = 22965570, upload-time = "2025-09-03T13:26:40.461Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7e/01/44f35124896dd5c73b26705c25bb8af2089895b32f057a1e4a3488847333/jupyterlab-4.4.7-py3-none-any.whl", hash = "sha256:808bae6136b507a4d18f04254218bfe71ed8ba399a36ef3280d5f259e69abf80", size = 12291583, upload-time = "2025-09-03T13:26:35.862Z" },
+]
+
+[[package]]
+name = "jupyterlab-git"
+version = "0.51.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyter-server" },
+    { name = "nbdime" },
+    { name = "nbformat" },
+    { name = "packaging" },
+    { name = "pexpect" },
+    { name = "traitlets" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f1/a2/071e86f015ce319b42131d543a1108fd92a97e7d5bea622a81a51cd4cf5e/jupyterlab_git-0.51.2.tar.gz", hash = "sha256:ad91d56f0298fd70e7d8f8cd1ee76d261f0dfb940cc490717a31d64df4b7d562", size = 14471184, upload-time = "2025-06-12T14:44:39.795Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/50/dc/d59ae2a9e4671c090ba9ef9f1228a62cf49ad80b4bc3d716565bb7e6a81b/jupyterlab_git-0.51.2-py3-none-any.whl", hash = "sha256:1150edabd844f9a5a3c7ba676409b18b8cc95b1a7bb171f357318f4075db2263", size = 367704, upload-time = "2025-06-12T14:44:37.308Z" },
 ]
 
 [[package]]
@@ -1520,6 +1551,26 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a3/59/f28e15fc47ffb73af68a8d9b47367a8630d76e97ae85ad18271b9db96fdf/nbconvert-7.16.6.tar.gz", hash = "sha256:576a7e37c6480da7b8465eefa66c17844243816ce1ccc372633c6b71c3c0f582", size = 857715, upload-time = "2025-01-28T09:29:14.724Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cc/9a/cd673b2f773a12c992f41309ef81b99da1690426bd2f96957a7ade0d3ed7/nbconvert-7.16.6-py3-none-any.whl", hash = "sha256:1375a7b67e0c2883678c48e506dc320febb57685e5ee67faa51b18a90f3a712b", size = 258525, upload-time = "2025-01-28T09:29:12.551Z" },
+]
+
+[[package]]
+name = "nbdime"
+version = "4.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama" },
+    { name = "gitpython" },
+    { name = "jinja2" },
+    { name = "jupyter-server" },
+    { name = "jupyter-server-mathjax" },
+    { name = "nbformat" },
+    { name = "pygments" },
+    { name = "requests" },
+    { name = "tornado" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a6/f1/4be57ecea4d55d322f05a0f89e0b73d7a8d90a16dbf01168eab3e7bf5939/nbdime-4.0.2.tar.gz", hash = "sha256:d8279f8f4b236c0b253b20d60c4831bb67843ed8dbd6e09f234eb011d36f1bf2", size = 9452967, upload-time = "2024-09-05T13:25:07.444Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/73/23/824b295f4cc53f4437f6917e8f46c519cd3a9be909dd36ca0682fdc7fff1/nbdime-4.0.2-py3-none-any.whl", hash = "sha256:e5a43aca669c576c66e757071c0e882de05ac305311d79aded99bfb5a3e9419e", size = 5917346, upload-time = "2024-09-05T13:25:03.95Z" },
 ]
 
 [[package]]
